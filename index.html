@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding RSVP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Landing Page -->
+    <div id="landing-page" class="container">
+        <div class="content-wrapper">
+            <div class="image-section">
+                <img src="couple-photo.jpg" alt="Couple Photo" id="couple-image" onerror="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB_jWj4ng--eyMCVIFTPSIU8ic0FAYYPqH2Q&s'">
+            </div>
+            <div class="details-section">
+                <h1>You're Invited!</h1>
+                <h2>Shezel and Azmat</h2>
+                <p class="date">Saturday, May 3, 2026</p>
+                <div class="details">
+                    <p>We would be honored to have you celebrate our special day with us!</p>
+                    <p>Please RSVP by March 1, 2026</p>
+                </div>
+                <button id="rsvp-button" class="rsvp-button">RSVP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password/Token Entry Modal -->
+    <div id="password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter Your Invitation Code</h2>
+            <p class="subtitle">Please enter the password from your invitation</p>
+            <form id="password-form">
+                <input type="text" id="password-input" placeholder="Enter invitation code" required>
+                <button type="submit" class="submit-button">Continue</button>
+            </form>
+            <div id="password-error" class="error-message"></div>
+        </div>
+    </div>
+
+    <!-- RSVP Form -->
+    <div id="rsvp-form-page" class="container hidden">
+        <div class="form-wrapper">
+            <h1>RSVP</h1>
+            <div id="loading" class="loading">Loading your invitation details...</div>
+            <div class="instructions-section">
+                <h2>Instructions</h2>
+                <p>For each individual, please select the events they will be attending. Please ensure you click the orange "Submit RSVP" button at the bottom of the page to submit your RSVP. We look forward to seeing you there! 😊🥳</p>
+            </div>
+            
+            <div id="form-content" class="hidden">
+                <form id="rsvp-form">
+                    <div id="attendees-list"></div>
+                    <button type="submit" class="submit-button">Submit RSVP</button>
+                </form>
+            </div>
+            <div id="form-error" class="error-message"></div>
+        </div>
+    </div>
+
+    <!-- Thank You / Summary Page -->
+    <div id="summary-page" class="container hidden">
+        <div class="summary-wrapper">
+            <div class="summary-content">
+                <h1>Thank You!</h1>
+                <p class="thank-you-message">We've received your RSVP and look forward to celebrating with you!</p>
+                <div id="summary-details"></div>
+                <button id="back-button" class="back-button">Back to Invitation</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="global-loader" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <div id="loader-text" class="loading-text">Loading...</div>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script src="script.js"></script>
+</body>
+</html>
