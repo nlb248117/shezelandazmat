@@ -6,7 +6,7 @@ const CONFIG = {
     EVENT_NAMES: {
         event1: 'Mehndi', // Name for Event 1
         event2: 'Shaadi', // Name for Event 2
-        event3: 'Walima' // Name for Event 3
+        event3: 'Valima' // Name for Event 3
     },
     EVENT_DETAILS: {
         event1: {
@@ -18,14 +18,14 @@ const CONFIG = {
         event2: {
             name: 'Shaadi',
             date: 'Saturday, May 31, 2026',
-            time: '4:00 PM',
+            time: '6:30 PM',
             location: 'Meridian Banquets, 4820 76 Ave NW, Edmonton, AB T6B 0A5'
         },
         event3: {
-            name: 'Walima',
+            name: 'Valima',
             date: 'Sunday, June 1, 2026',
-            time: '7:00 PM',
-            location: 'Toronto'
+            time: '6:30 PM',
+            location: 'Bellvue Manor, 8083 Jane St, Concord, ON L4K 2M7'
         }
     }
 };
@@ -599,4 +599,5 @@ function toggleGlobalLoading(show, message = 'Loading...') {
     } else {
         if (loader) loader.classList.add('hidden');
     }
+
 }
