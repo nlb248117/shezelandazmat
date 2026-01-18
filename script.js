@@ -25,7 +25,7 @@ const CONFIG = {
             name: 'Valima',
             date: 'Sunday, June 7, 2026',
             time: '6:30 PM',
-            location: 'Bellvue Manor, 8083 Jane St, Concord, ON L4K 2M7'
+            location: 'Bellvue Manor, 8083 Jane St, Concord, Ontario L4K 2M7, (Toronto Area)'
         }
     }
 };
@@ -601,4 +601,5 @@ function toggleGlobalLoading(show, message = 'Loading...') {
     }
 
 }
+
 
