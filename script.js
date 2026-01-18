@@ -17,13 +17,13 @@ const CONFIG = {
         },
         event2: {
             name: 'Shaadi',
-            date: 'Saturday, May 31, 2026',
+            date: 'Sunday, May 31, 2026',
             time: '6:30 PM',
             location: 'Meridian Banquets, 4820 76 Ave NW, Edmonton, AB T6B 0A5'
         },
         event3: {
             name: 'Valima',
-            date: 'Sunday, June 1, 2026',
+            date: 'Sunday, June 7, 2026',
             time: '6:30 PM',
             location: 'Bellvue Manor, 8083 Jane St, Concord, ON L4K 2M7'
         }
@@ -601,3 +601,4 @@ function toggleGlobalLoading(show, message = 'Loading...') {
     }
 
 }
+
